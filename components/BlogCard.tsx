@@ -1,7 +1,8 @@
 import {FunctionComponent} from "react";
 import Link from "next/link";
 import {BlogPost} from "../@types/schema";
-import dayjs from 'dayjs'
+import dayjs from 'dayjs';
+
 
 type BlogCardProps = {
     post: BlogPost

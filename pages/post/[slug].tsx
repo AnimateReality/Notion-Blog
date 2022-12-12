@@ -2,6 +2,7 @@ import {GetStaticProps, InferGetStaticPropsType} from "next";
 import ReactMarkdown from "react-markdown";
 import Head from "next/head";
 import NotionService from "../../services/notion-service";
+import Header from "../../components/Header/Header";
 
 const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
@@ -13,6 +14,7 @@ const Post = ({markdown, post}: InferGetStaticPropsType<typeof getStaticProps>) 
                 <meta name={"og:description"} title={"og:description"} content={post.description}/>
                 <meta name={"og:image"} title={"og:image"} content={post.cover}/>
             </Head>
+            <Header />
 
             <div className="min-h-screen">
                 <main className="max-w-5xl mx-auto relative">
