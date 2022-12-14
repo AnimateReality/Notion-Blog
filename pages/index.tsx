@@ -17,7 +17,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 const Home = ({posts}: InferGetStaticPropsType<typeof getStaticProps>) => {
-    const title = 'Test Blog';
+    const title = 'Notion Blog';
     const description = 'Welcome to my Notion Blog.'
 
     return (
